@@ -1,0 +1,23 @@
+{
+    "name": "adaptive/default",
+    "model": {
+        "model_name": "stabilityai/stable-diffusion-3.5-large",
+        "cache_dir": "/data/models/cache/",
+        "enable_offload": false,
+        "device_map": "balanced"
+    },
+    "generation": {
+        "height": 1024,
+        "width": 1024,
+        "guidance_scale": 7.0,
+        "num_inference_steps": 50,
+        "max_sequence_length": 512
+    },
+    "strategy": {
+        "type": "adaptive",
+        "factor": 4,
+        "steering_step": 5,
+        "estimate_step": 20,
+        "beta": 1
+    }
+}

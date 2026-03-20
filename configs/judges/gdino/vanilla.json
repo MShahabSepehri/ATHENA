@@ -1,0 +1,13 @@
+{   
+    "name": "GDINO",
+    "model": {
+        "repo_path": "/home/shahab/CountDiff/Grounded-Segment-Anything/GroundingDINO",
+        "model_path": "/data/models/groundingdino_swint_ogc.pth"
+    },
+
+    "inference": {
+        "fp16_inference": false,
+        "box_tr": 0.35,
+        "text_tr": 0.25
+    }
+}

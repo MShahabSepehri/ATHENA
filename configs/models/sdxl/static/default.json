@@ -1,0 +1,21 @@
+{
+    "name": "static/default",
+    "model": {
+        "model_name": "stabilityai/stable-diffusion-xl-base-1.0",
+        "cache_dir": "/data/models/cache/",
+        "enable_offload": false,
+        "device_map": "balanced"
+    },
+    "generation": {
+        "height": 1024,
+        "width": 1024,
+        "guidance_scale": 5.0,
+        "num_inference_steps": 50
+    },
+    "strategy": {
+        "type": "static",
+        "factor": 5,
+        "steering_step": 10,
+        "beta": 1
+    }
+}

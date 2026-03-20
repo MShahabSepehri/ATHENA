@@ -1,0 +1,23 @@
+{
+    "name": "feedback/default",
+    "model": {
+        "model_name": "black-forest-labs/FLUX.1-dev",
+        "cache_dir": "/data/models/cache/",
+        "enable_offload": false,
+        "device_map": "balanced"
+    },
+    "generation": {
+        "height": 1024,
+        "width": 1024,
+        "guidance_scale": 3.5,
+        "num_inference_steps": 50,
+        "max_sequence_length": 512
+    },
+    "strategy": {
+        "type": "feedback",
+        "factor": 4,
+        "steering_step": 5,
+        "beta": 1,
+        "estimate_step": 20
+    }
+}
