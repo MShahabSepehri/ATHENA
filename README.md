@@ -38,6 +38,7 @@ adaptive steering yielding the most accurate counts.
   * [Usage](#-usage)
     * [Single Generation](#single-generation)
     * [Dataset Evaluation](#dataset-evaluation)
+  * [Citation](#-citation)
 
 ## 🔧 Requirements
 
@@ -113,4 +114,17 @@ python scripts/eval.py \
   --model_name flux \
   --model_args_path configs/models/flux/adaptive/default.json 
 
+```
+
+## 📌 Citation
+
+If you use our code or dataset, please cite our [paper](https://arxiv.org/abs/2603.19676).
+
+```bibtex
+@article{sepehri2026athena,
+      title={ATHENA: Adaptive Test-Time Steering for Improving Count Fidelity in Diffusion Models},
+      author={Mohammad Shahab Sepehri and Asal Mehradfar and Berk Tinaz and Salman Avestimehr and Mahdi Soltanolkotabi},
+      journal={arXiv preprint arXiv:2603.19676},
+      year={2026}
+}
 ```
