@@ -17,7 +17,7 @@ def get_args():
     parser.add_argument("--num_objects", type=int, required=True)
     parser.add_argument("--device", type=str, default='cuda')
     parser.add_argument("--save_path", type=str, default=None)
-    parser.add_argument("--seed", type=str, default=23)
+    parser.add_argument("--seed", type=int, default=23)
     args = parser.parse_args()
 
 
